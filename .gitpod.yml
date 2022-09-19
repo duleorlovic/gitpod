@@ -1,0 +1,18 @@
+
+image:
+  file: .gitpod.dockerfile
+  
+tasks:
+  - command: redis-server
+  - init: bin/setup
+    command: bin/rails s -p 3000
+  - init: bin/setup
+    command: bin/rails tailwindcss:watch
+    # command: bin/dev
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - vscodevim.vim

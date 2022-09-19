@@ -18,5 +18,6 @@ module Gitpod
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.hosts << "3000-duleorlovic-gitpod-gus37vjmteu.ws-eu64.gitpod.io"
   end
 end
