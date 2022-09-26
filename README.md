@@ -1,7 +1,17 @@
 # Gitpod
 
+
+For github you need to install https://github.com/apps/gitpod-io
+To rebuild you need to push to origin repo.
+And again open workspace using hash
+
+https://gitpod.io/#https://github.com/duleorlovic/gitpod
+https://gitpod.io/#prebuild/https://github.com/duleorlovic/gitpod
+
+# Connect to workspace
+
 Once you add your public ssh key https://gitpod.io/keys you can connect to the
-workspace with ssh, find ssh command on three dots Connect via SSH
+workspace with ssh, find ssh command on three dots and `Connect via SSH` menu
 ```
 ssh 'duleorlovic-gitpod-gus37vjmteu@duleorlovic-gitpod-gus37vjmteu.ssh.ws-eu64.gitpod.io'
 ```
@@ -27,7 +37,7 @@ mode
 
 also find some shortcuts when clicking on Gear icon and `Keyboard shortcuts`
 
-Gitpodify
+# Gitpodify
 
 https://www.gitpod.io/guides/gitpodify
 * `gp sync` make terminal wait another terminal to complete
@@ -56,10 +66,3 @@ tasks:
 and stop workspace (click on gitpod text on bottom right and search for `Gitpod:
 Stop Workspace`).
 
-
-For github you need to install https://github.com/apps/gitpod-io
-To rebuild you need to push to origin repo.
-And again open workspace using hash
-
-https://gitpod.io/#https://github.com/duleorlovic/gitpod
-https://gitpod.io/#prebuild/https://github.com/duleorlovic/gitpod
