@@ -9,6 +9,10 @@ tasks:
   - init: bin/setup
     command: bin/rails tailwindcss:watch
     # command: bin/dev
+  - name: Bash
+    before: echo hi $USER, now is `date`
+    init: pwd
+    command: ls
 
 ports:
   # rails

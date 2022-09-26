@@ -57,6 +57,12 @@ gitpod.yml should define image, tasks and ports
 ```
 # .gitpod.yml
 # https://www.gitpod.io/docs/references/gitpod-yml
+tasks:
+  # each task will start new terminal
+  - name: Term 1 # name in sidebar
+    before: echo "before script"
+    init: bundle install # performed only once when workspace is created
+    command: bin/rails s # this is performed when workspace is started/restarted
 ```
 
 
