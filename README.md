@@ -43,6 +43,28 @@ https://www.gitpod.io/guides/gitpodify
 * `gp sync` make terminal wait another terminal to complete
 * `gp init -i` generate .gitpod.yml file
 
+
+By default create prebuild for master and pullRequests
+```
+# .gitpod.yml
+github:
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
+    # enable for all branches in this repo (defaults to false)
+    branches: true
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: true
+    # enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: true
+    # add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
+    addComment: true
+    # add a "Review in Gitpod" button to pull requests (defaults to false)
+    addBadge: false
+    # add a label once the prebuild is ready to pull requests (defaults to false)
+    addLabel: prebuilt-in-gitpod
+```
+
 https://www.gitpod.io/guides/gitpodify#redis
 To add redis use custom image
 ```
@@ -66,3 +88,10 @@ tasks:
 and stop workspace (click on gitpod text on bottom right and search for `Gitpod:
 Stop Workspace`).
 
+# Rails
+
+Add any two level subdomain like asd.123.gitpod.io
+```
+# config/application.rb
+    config.hosts << /.*gitpod.io/
+```
