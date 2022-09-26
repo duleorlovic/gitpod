@@ -22,6 +22,13 @@ sshfs 'duleorlovic-gitpod-gus37vjmteu@duleorlovic-gitpod-gus37vjmteu.ssh.ws-eu64
 umount -f ~/gitpod
 ```
 
+You can share workspace, but than anyone who has account on gitpod can access
+this workspaces. Note to test in new incognito window with new gitpod session.
+When you stop sharing user can still see updates live and autosave will work.
+But once they reload the page, stoped sharing workspace could not be opened.
+
+## Vim
+
 Inside VSCODE you can enable extension VCDodeVim https://github.com/VSCodeVim/Vim
 You need to paste content to `settings.yml` so using jj will ESC from insert
 mode

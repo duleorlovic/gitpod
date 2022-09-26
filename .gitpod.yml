@@ -9,9 +9,16 @@ tasks:
   - init: bin/setup
     command: bin/rails tailwindcss:watch
     # command: bin/dev
+
 ports:
   - port: 3000
     onOpen: open-preview
+  - port: 5432
+    onOpen: ignore
+  - port: 6379
+    onOpen: ignore
+  - port: 443
+    onOpen: ignore
 
 vscode:
   extensions:
